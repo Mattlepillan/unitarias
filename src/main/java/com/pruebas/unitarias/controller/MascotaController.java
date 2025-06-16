@@ -25,7 +25,7 @@ public class MascotaController {
     @Autowired
     MascotaService mascotaService;
 
-    @PostMapping("path")
+    @PostMapping
     public Mascota crearMascota(@RequestBody Mascota mascota) {
         return mascotaService.guardarMascota(mascota);
     }

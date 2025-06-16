@@ -59,7 +59,7 @@ public class MascotaServiceTest {
     @Test 
     void testObtenerMascotaPorId(){
         Mascota m1 = new Mascota(1L, "Rex", "Perro", 5);
-        Mascota m2 = new Mascota(2L, "Michi", "Gato", 2);
+        //Mascota m2 = new Mascota(2L, "Michi", "Gato", 2);
         when(mascotaRepository.findById(m1.getId())).thenReturn(Optional.of(m1)); 
 
         Optional<Mascota> resultado = mascotaService.obtenerMascotaPorId(m1.getId());
